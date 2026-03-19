@@ -18,7 +18,8 @@ AI agent conducts interviews. Share a link with customers. Paste transcripts for
 
 ### Agent & Automation
 - **Agent Interview** – Live (you select answers) or Simulated (practice with personas)
-- **Shareable Link** – Customer opens link, completes form, sends result back
+- **AI Interview** – Customer chats with AI; AI asks PMF questions and extracts answers (requires OpenAI API key)
+- **Shareable Link** – Form or AI mode; customer completes, sends result back
 - **Transcript Import** – Paste transcript → auto-extract → one-click save
 - **Bulk Import** – Separate with `---` for multiple interviews
 
@@ -44,6 +45,8 @@ npm run dev
 
 Open http://localhost:5173
 
+**AI Interview** (needs API): Use `npm run dev:full` with `OPENAI_API_KEY` in `.env`, or deploy to Vercel.
+
 ---
 
 ## Deploy
@@ -51,7 +54,8 @@ Open http://localhost:5173
 ### Vercel (recommended)
 1. Push to GitHub
 2. [Import on Vercel](https://vercel.com/new)
-3. Deploy (no config needed)
+3. Add env var: `OPENAI_API_KEY` (for AI Interview)
+4. Deploy
 
 ### Netlify
 1. Build command: `npm run build`

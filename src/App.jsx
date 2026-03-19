@@ -8,6 +8,7 @@ import InterviewGuide from './components/InterviewGuide';
 import ImportTranscript from './components/ImportTranscript';
 import AgentInterview from './components/AgentInterview';
 import CustomerInterview from './components/CustomerInterview';
+import AIInterview from './components/AIInterview';
 import InterviewComplete from './components/InterviewComplete';
 import ShareLink from './components/ShareLink';
 import Pricing from './components/Pricing';
@@ -88,9 +89,12 @@ export default function App() {
   const baseUrl = typeof window !== 'undefined' ? window.location.origin + window.location.pathname : '';
 
   // Customer-facing interview (shared link)
-  if (path === '/interview') {
+  if (path === '/interview' || path === '/interview/ai') {
     if (customerResult) {
       return <InterviewComplete result={customerResult} baseUrl={baseUrl} />;
+    }
+    if (path === '/interview/ai') {
+      return <AIInterview onComplete={handleCustomerComplete} baseUrl={baseUrl} />;
     }
     return <CustomerInterview onComplete={handleCustomerComplete} />;
   }

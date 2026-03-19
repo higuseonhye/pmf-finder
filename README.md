@@ -4,7 +4,7 @@
 
 AI agent conducts interviews. Share a link with customers. Paste transcripts for auto-extraction. See your PMF score.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/higuseonhye/pmf-finder)
+**[Live](https://pmf-finder-higuseonhye.vercel.app)** · [Deploy with Vercel](https://vercel.com/new/clone?repository-url=https://github.com/higuseonhye/pmf-finder)
 
 ---
 

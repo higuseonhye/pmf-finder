@@ -52,10 +52,9 @@ Open http://localhost:5173
 ## Deploy
 
 ### Vercel (recommended)
-1. Push to GitHub
-2. [Import on Vercel](https://vercel.com/new)
-3. Add env var: `OPENAI_API_KEY` (for AI Interview)
-4. Deploy
+1. [Import on Vercel](https://vercel.com/new) → connect GitHub repo
+2. Add env var in Project Settings: `OPENAI_API_KEY` (for AI Interview)
+3. Deploy — auto-deploys on every push
 
 ### Netlify
 1. Build command: `npm run build`

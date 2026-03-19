@@ -4,7 +4,7 @@
 
 AI agent conducts interviews. Share a link with customers. Paste transcripts for auto-extraction. See your PMF score.
 
-**[Live](https://pmf-finder-higuseonhye.vercel.app)** · [Deploy with Vercel](https://vercel.com/new/clone?repository-url=https://github.com/higuseonhye/pmf-finder)
+**[Live](https://pmf-finder.vercel.app)** · [Deploy](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhiguseonhye%2Fpmf-finder)
 
 ---
 
@@ -52,14 +52,14 @@ Open http://localhost:5173
 ## Deploy
 
 ### Vercel (recommended)
-1. [Import on Vercel](https://vercel.com/new) → connect GitHub repo
-2. Add env var in Project Settings: `OPENAI_API_KEY` (for AI Interview)
-3. Deploy — auto-deploys on every push
+- [One-click deploy](https://vercel.com/new/clone?repository-url=https://github.com/higuseonhye/pmf-finder) or Import → connect GitHub repo
+- Add env var: `OPENAI_API_KEY` (for AI Interview)
+- `api/` routes and SPA rewrites are configured in `vercel.json` — auto-deploys on push
 
 ### Netlify
-1. Build command: `npm run build`
-2. Publish directory: `dist`
-3. Add `public/_redirects` for SPA routing
+- Build: `npm run build` · Publish: `dist`
+- SPA routing via `public/_redirects` (included)
+- **Note:** AI Interview requires Vercel serverless; use Vercel for full features
 
 ---
 

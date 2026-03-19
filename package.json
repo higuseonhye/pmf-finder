@@ -1,7 +1,8 @@
 {
   "name": "pmf-finder",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Find product-market fit without Silicon Valley",
+  "repository": "https://github.com/higuseonhye/pmf-finder",
   "type": "module",
   "scripts": {
     "dev": "vite",
